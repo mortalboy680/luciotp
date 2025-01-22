@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Divs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../IMG/logo.jpg">
+    <link rel="stylesheet" href="../CSS/adm.css">
+    <script src="adm.js" defer></script>
+    <script src="../SCRIPT/adm.html" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Administrador de Divs</h1>
+    </header>
+    <main>
+        <form id="divForm">
+            <label for="imgURL">URL de la Imagen:</label>
+            <input type="text" id="imgURL" name="imgURL" placeholder="https://example.com/image.jpg" required>
+            
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" placeholder="Título del div" required>
+            
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" placeholder="Descripción del div" required></textarea>
+            
+            <button type="submit">Agregar Div</button>
+        </form>
+        
+        <section id="preview">
+            <h2>Vista Previa</h2>
+            <div id="dynamic-container"></div>
+        </section>
+        
+    </main>
+</body>
+</html>
